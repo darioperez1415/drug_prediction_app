@@ -55,8 +55,7 @@ def train_models(df, features, drug_targets, min_samples=10):
             'model__max_depth': [5, 10, 20, None],
             'model__min_samples_split': [2, 5, 10],
             'model__criterion': ['gini', 'entropy']
-}
-
+        }
         
         grid_search = GridSearchCV(pipeline, params, cv=3, scoring='roc_auc', n_jobs=-1)
         grid_search.fit(X_train, y_train)

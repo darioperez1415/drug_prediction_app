@@ -132,4 +132,4 @@ class DrugPredictorApp:
 # ========== Entry Point ==========
 if __name__ == "__main__":
     app = DrugPredictorApp().create_app()
-    app.launch(server_port=7860)
+    app.launch()

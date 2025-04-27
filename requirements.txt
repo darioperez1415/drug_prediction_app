@@ -1,4 +1,4 @@
-gradio>=3.0
+streamlit>=1.12
 scikit-learn>=1.0
 imbalanced-learn>=0.9
 pandas>=1.3
