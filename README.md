@@ -1,47 +1,33 @@
-#Read Me
+# Drug Prediction App
 
-🧪 Drug Use Predictor Explorer
-An interactive machine learning application predicting drug use likelihood based on demographic and psychological traits.
-Built using Random Forest models and visualized through an interactive Gradio app.
+A machine learning application to predict drug usage behavior based on demographic and personality traits.
 
-🚀 Features
-Predict likelihood of drug usage across 18 substances.
+Built with:
+- Python 🐍
+- Random Forest and Decision Tree Classifiers 🌳
+- Streamlit 📈
 
-Explore feature importance dynamically through interactive plots.
+---
 
-Visualize model performance (ROC-AUC vs F1 Score).
+## 🚀 Project Overview
 
-Focus analysis on Top 5 performing models.
+This application analyzes user data and predicts the likelihood of drug consumption for various substances (e.g., alcohol, cannabis, caffeine, etc.).
 
-Organized, modular project structure for easy extension.
+Key Features:
+- Interactive web app using Streamlit
+- Trained models (Random Forest, Decision Tree) with SMOTE balancing
+- Performance metrics: Accuracy, Precision, Recall, F1 Score
+- Easy deployment ready!
 
-📚 Dataset
-Demographics: age, gender, country, ethnicity
+---
 
-Psychological Traits: Big Five (nscore, escore, oscore, ascore, cscore), impulsiveness, sensation seeking
+## 📁 Project Structure
 
-Drug Usage: Self-reported behavior, binary classified as user (1) or non-user (0).
-
-🛠️ Machine Learning Model
-Algorithm: Random Forest Classifier
-
-Balancing: SMOTE applied to handle class imbalance
-
-Evaluation Metrics:
-
-ROC-AUC Score
-
-F1 Score
-
-Precision
-
-Recall
-
-📊 Top 5 Models (Performance Summary)
-
-Drug	ROC-AUC	F1 Score	Precision	Recall
-Legal Highs	0.876	0.748	0.717	0.783
-Cannabis	0.860	0.840	0.876	0.806
-LSD	0.857	0.700	0.644	0.766
-Methadone	0.820	0.562	0.455	0.735
-Mushrooms	0.810	0.665	0.617	0.719
+```bash
+├── app/
+│   ├── app.py              # Streamlit application
+│   ├── model_training.py   # Model training scripts
+├── data/
+│   └── drug_consumption_combined.csv  # Dataset
+├── requirements.txt        # Project dependencies
+└── README.md                # Project documentation
