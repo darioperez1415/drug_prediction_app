@@ -1,5 +1,7 @@
-from app.app import DrugPredictorApp
+from DrugPredictorApp import DrugPredictorApp
+from model_training import prepare_data, train_models
+
 
 if __name__ == "__main__":
-    app = DrugPredictorApp().create_app()
-    app.launch()
+    demo = DrugPredictorApp().create_app()
+    demo.launch()
