@@ -21,13 +21,3 @@ Key Features:
 
 ---
 
-## 📁 Project Structure
-
-```bash
-├── app/
-│   ├── app.py              # Streamlit application
-│   ├── model_training.py   # Model training scripts
-├── data/
-│   └── drug_consumption_combined.csv  # Dataset
-├── requirements.txt        # Project dependencies
-└── README.md                # Project documentation
